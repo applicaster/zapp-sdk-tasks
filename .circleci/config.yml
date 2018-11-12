@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.3.5
+    steps:
+      - checkout
+
+      - run:
+          name: Install rails dependencies
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
+
+      - type: shell
+        name: Rails tests
+        command: bundle exec rspec
