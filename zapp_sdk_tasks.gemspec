@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["r.meirman@applicaster.com"]
 
   spec.summary       = %q{Zapp sdks related common tasks}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/applicaster/zapp-sdk-tasks"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
