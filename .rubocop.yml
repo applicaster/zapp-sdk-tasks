@@ -1,0 +1,57 @@
+AllCops:
+  Exclude:
+    - .bundle/**/*
+    - vendor/bundle/**/*
+    - bin/*
+    - Gemfile
+    - Rakefile
+
+CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    detect:
+    find_all:
+    inject: reduce
+    collect: map
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Max: 100
+
+PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%': '{}'
+
+PredicateName:
+  NamePrefixBlacklist:
+    - is_
+
+StringLiterals:
+  EnforcedStyle: double_quotes
+
+DotPosition:
+  EnforcedStyle: leading
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/MethodLength:
+  Max: 20
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+SpaceBeforeFirstArg:
+  Enabled: false
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
