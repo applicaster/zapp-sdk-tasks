@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "zapp_sdk_tasks/version"
 
 module ZappSdkTasks
