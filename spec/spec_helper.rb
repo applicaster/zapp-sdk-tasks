@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-require "bundler/setup"
-require "zapp_sdk_tasks"
 require "fantaskspec"
-require "rake"
 require "pry"
 
 RSpec.configure do |config|
