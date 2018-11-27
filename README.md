@@ -1,4 +1,4 @@
-# ZappSdkTasks
+# Zapp Sdk Tasks
 
 This repo provides various rake tasks to be used on any new Zapp sdk repo you
 create.
