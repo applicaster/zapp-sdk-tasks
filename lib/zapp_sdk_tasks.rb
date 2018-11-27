@@ -12,7 +12,8 @@ if defined?(Rails)
 
       rake_tasks do
         path = File.expand_path(__dir__)
-        Dir.glob("#{path}/tasks/**/*.rake").each { |f| load f }
+        $LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "lib"))
+        Dir.glob("#{path}/lib/**/*.rake").each { |f| load f }
       end
     end
   end

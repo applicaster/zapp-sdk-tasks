@@ -40,6 +40,11 @@ Metrics/AbcSize:
 Metrics/MethodLength:
   Max: 20
 
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - 'spec/**/*.rb'
+
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
@@ -53,5 +58,8 @@ Layout/IndentHash:
   EnforcedStyle: consistent
 
 Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/RedundantBegin:
   Enabled: false
 
