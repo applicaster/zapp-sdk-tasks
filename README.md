@@ -28,7 +28,7 @@ Or install it yourself as:
 
 This repo contains two tasks:
 
-####Create Zapp SDK
+#### Create Zapp SDK
 
 This task creates a stable or Canary (preview) sdk on Zapp, using a tag or
 branch name.
@@ -46,7 +46,7 @@ version         | The requireed version for the published sdk. *Note: only semve
 repository name | The sdk repo name  |
 zapp token      | Zapp API access token  |
 
-####Publish Changelog
+#### Publish Changelog
 
 This task creates and publish changelog to Amazon s3.
 **Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` environment variable in order to use this task.
