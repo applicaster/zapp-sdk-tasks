@@ -9,7 +9,7 @@ module ZappSdkTasks
     def install_tasks
       path = File.expand_path(__dir__)
       $LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "lib"))
-      Dir.glob("#{path}/lib/**/*.rake").each { |f| load f }
+      Dir.glob("#{path}/**/*.rake").each { |f| load f }
     end
   end
 end
@@ -29,3 +29,4 @@ if defined?(Rails)
     end
   end
 end
+
