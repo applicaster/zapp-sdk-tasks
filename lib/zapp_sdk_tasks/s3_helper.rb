@@ -9,7 +9,7 @@ class S3Helper
     )
   end
 
-  def self.s3_write_options
+  def self.write_options
     { acl: "public-read", cache_control: "max-age=60" }
   end
 end
