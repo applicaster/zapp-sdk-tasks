@@ -34,6 +34,7 @@ This task creates a stable or Canary (preview) sdk on Zapp, using a tag or
 branch name.
 
 Run:
+
 `bundle exec rake zapp_sdks:create[<platform as defined in zapp>,<version e.g. 1.0.0>,<sdk repo name>,<zapp token>]`
 
 Make sure the params are comma-separated without whitespaces
@@ -53,6 +54,7 @@ This task creates and publish changelog to Amazon s3.
 **Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` environment variable in order to use this task.
 
 Run:
+
 `bundle exec rake zapp_sdks:publish_changelog[<platform as defined in zapp>,<version e.g. 1.0.0>]`
 
 Make sure the params are comma-separated without whitespaces
