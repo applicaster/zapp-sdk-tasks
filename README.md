@@ -57,7 +57,7 @@ Run:
 
 Make sure the params are comma-separated without whitespaces
 
-*Params*
+**Params**
 
 param        | description
 ----------------|-------------|
