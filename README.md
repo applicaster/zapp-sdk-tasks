@@ -39,6 +39,7 @@ Run:
 Make sure the params are comma-separated without whitespaces
 
 **Params**
+
 param        | description
 ----------------|-------------|
 platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`)   |
@@ -57,6 +58,7 @@ Run:
 Make sure the params are comma-separated without whitespaces
 
 *Params*
+
 param        | description
 ----------------|-------------|
 platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`)   |
