@@ -26,6 +26,9 @@ Or install it yourself as:
 
 ## Usage
 
+In order to use the tasks please add the following line before running the tasks:
+`require "zapp_sdk_tasks"`
+
 This repo contains two tasks:
 
 #### Create Zapp SDK
