@@ -52,6 +52,7 @@ RSpec.describe "zapp_sdks:create", type: :rake do
           build_branch: "1.0-preview1"
         },
         use_latest_dev: true,
+        base_sdk_version_id: nil,
         access_token: "1234"
       }
     end
@@ -88,6 +89,7 @@ RSpec.describe "zapp_sdks:create", type: :rake do
           build_branch: "release"
         },
         use_latest_dev: false,
+        base_sdk_version_id: "12345",
         access_token: "1234"
       }
     end
@@ -124,6 +126,7 @@ RSpec.describe "zapp_sdks:create", type: :rake do
           build_branch: "release"
         },
         use_latest_dev: true,
+        base_sdk_version_id: nil,
         access_token: "1234"
       }
     end
