@@ -27,6 +27,7 @@ class SdkHelper
         build_branch: preview?(request_options[:version]) ? request_options[:version] : "release"
       },
       use_latest_dev: base_sdk_id(request_options[:version]).to_s.empty?,
+      base_sdk_version_id: base_sdk_id(request_options[:version]),
       access_token: ENV["ZAPP_TOKEN"] || request_options[:zapp_token]
     }
   end
