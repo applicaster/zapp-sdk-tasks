@@ -10,6 +10,11 @@ desc "Create SDK version on Zapp"
 namespace :zapp_sdks do
   task :create, :platform, :version, :project_repo_name, :zapp_token do |_task, args|
     begin
+      if SdkHelper.triggered_by_zapp?
+        puts "skipping sdk creation, was triggered by Zapp CMS"
+        next
+      end
+
       connection = Faraday.new(url: SdkHelper.zapp_host) do |faraday|
         faraday.request  :url_encoded
         faraday.response :logger, ::Logger.new(STDOUT), bodies: true do |logger|

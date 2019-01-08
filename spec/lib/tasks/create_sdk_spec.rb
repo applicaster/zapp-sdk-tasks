@@ -8,6 +8,7 @@ RSpec.describe "zapp_sdks:create", type: :rake do
   before do
     Rake::Task["zapp_sdks:create"].reenable
     ENV["ZAPP_TOKEN"] = "1234"
+    ENV["triggered_by"] = ""
 
     allow(Faraday).to receive(:new)
       .with(url: "https://zapp.applicaster.com")
@@ -16,6 +17,17 @@ RSpec.describe "zapp_sdks:create", type: :rake do
 
   it "has the correct name" do
     expect(subject.name).to eq("zapp_sdks:create")
+  end
+
+  context "when triggered_by Zapp" do
+    before do
+      ENV["triggered_by"] = "zapp"
+    end
+
+    it "skip creation" do
+      expect(connection).not_to receive(:post)
+      Rake::Task["zapp_sdks:create"].invoke("android", "1.0", "zapp-android")
+    end
   end
 
   context "when it's development version" do

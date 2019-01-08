@@ -49,4 +49,8 @@ class SdkHelper
     version = Versionomy.parse(version)
     version.release_type
   end
+
+  def self.triggered_by_zapp?
+    ENV["triggered_by"] == "zapp"
+  end
 end

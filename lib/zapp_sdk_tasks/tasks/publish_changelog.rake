@@ -9,6 +9,11 @@ desc "Generate Changelog.md and publish to s3"
 namespace :zapp_sdks do
   task :publish_changelog, :platform, :version do |_task, args|
     begin
+      if SdkHelper.triggered_by_zapp?
+        puts "skipping sdk creation, was triggered by Zapp CMS"
+        next
+      end
+
       version = Versionomy.parse(args[:version])
       release_type = version.release_type
 
