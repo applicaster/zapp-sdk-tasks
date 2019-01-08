@@ -16,6 +16,7 @@ RSpec.describe "zapp_sdks:publish_changelog", type: :rake do
     ENV["AWS_ACCESS_KEY_ID"] = "access_key_id"
     ENV["AWS_SECRET_ACCESS_KEY"] = "secret_access_key"
     ENV["AWS_REGION"] = "region"
+    ENV["triggered_by"] = ""
 
     allow_any_instance_of(Aws::S3::Resource).to receive(:bucket).and_return bucket
 
@@ -26,6 +27,17 @@ RSpec.describe "zapp_sdks:publish_changelog", type: :rake do
 
   it "has the correct name" do
     expect(subject.name).to eq("zapp_sdks:publish_changelog")
+  end
+
+  context "when triggered_by Zapp" do
+    before do
+      ENV["triggered_by"] = "zapp"
+    end
+
+    it "skip publishing" do
+      expect(s3_object).not_to receive(:put)
+      Rake::Task["zapp_sdks:publish_changelog"].invoke("android", "1.0")
+    end
   end
 
   context "when it's development version" do
