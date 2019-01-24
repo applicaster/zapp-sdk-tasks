@@ -69,6 +69,20 @@ param        | description
 platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`)   |
 version         | The requireed version for the published sdk  |
 
+#### Upload Development Project
+
+This task uploads the Development project to Amazon s3, and updates Zapp.
+**Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `ZAPP_TOKEN` environment variable in order to use this task.
+
+Run:
+
+`bundle exec rake zapp_sdks:upload_dev_project[<path to the development project file>]`
+
+**Params**
+
+param        | description
+----------------|-------------|
+file path       | Path to the development project file    |
 
 ## Development
 
