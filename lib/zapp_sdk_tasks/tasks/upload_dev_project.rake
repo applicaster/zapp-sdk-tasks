@@ -35,7 +35,7 @@ namespace :zapp_sdks do
   task :update_zapp_version, :project_link do |_task, args|
     begin
       unless args[:project_link]
-        puts "skipping zapp app version update. Empty project file path"
+        puts "skipping zapp app version update. Empty dev project link"
         next
       end
 
