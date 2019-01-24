@@ -25,7 +25,7 @@ namespace :zapp_sdks do
       end
 
       puts "succefully uploaded the dev project to s3"
-      Rake::Task["zapp_sdks:update_zapp_version"].invoke(obj.public_url)
+      Rake::Task["zapp_sdks:update_zapp_version"].invoke(S3Helper.extract_cdn_uri(obj.public_url))
     end
   end
 end
