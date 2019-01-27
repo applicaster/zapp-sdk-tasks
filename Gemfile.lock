@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zapp_sdk_tasks (0.3.0)
+    zapp_sdk_tasks (0.4.0)
       aws-sdk-s3 (~> 1)
       faraday (~> 0.15.3)
       rake (~> 11.0)
