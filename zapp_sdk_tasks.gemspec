@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "aws-sdk-s3", "~> 1"
-  spec.add_dependency "faraday", "~> 0.15.3"
+  spec.add_dependency "faraday", "~> 0.17.0"
   spec.add_dependency "rake", "~> 11.0"
   spec.add_dependency "versionomy", "~> 0.5.0"
 
