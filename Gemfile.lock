@@ -4,7 +4,7 @@ PATH
     zapp_sdk_tasks (0.6.0)
       aws-sdk-s3 (~> 1)
       faraday (~> 1.0.0)
-      rake (~> 11.0)
+      rake (>= 11, < 14)
       versionomy (~> 0.5.0)
 
 GEM
@@ -48,7 +48,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     rainbow (3.0.0)
-    rake (11.3.0)
+    rake (13.0.1)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -85,7 +85,7 @@ DEPENDENCIES
   dotenv (~> 2.5.0)
   fantaskspec (~> 1.0.0)
   pry (~> 0.12.1)
-  rake (~> 11.0)
+  rake (>= 11, < 14)
   rspec (~> 3.0)
   rspec_junit_formatter (~> 0.4.1)
   rubocop (~> 0.60.0)
