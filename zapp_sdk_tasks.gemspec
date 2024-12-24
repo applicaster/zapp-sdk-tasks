@@ -23,16 +23,16 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "aws-sdk-s3", "~> 1"
-  spec.add_dependency "faraday", "~> 1.0.0"
-  spec.add_dependency "rake", "~> 11.0"
+  spec.add_dependency "faraday", "~> 2.12.2"
+  spec.add_dependency "rake", "~> 13.2.1"
   spec.add_dependency "versionomy", "~> 0.5.0"
 
-  spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "dotenv", "~> 2.5.0"
-  spec.add_development_dependency "fantaskspec", "~> 1.0.0"
-  spec.add_development_dependency "pry", "~> 0.12.1"
-  spec.add_development_dependency "rake", "~> 11.0"
+  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "dotenv", "~> 3.1.7"
+  spec.add_development_dependency "fantaskspec", "~> 1.2.0"
+  spec.add_development_dependency "pry", "~> 0.15.0"
+  spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rspec_junit_formatter", "~> 0.4.1"
-  spec.add_development_dependency "rubocop", "~> 0.60.0"
+  spec.add_development_dependency "rspec_junit_formatter", "~> 0.6.0"
+  spec.add_development_dependency "rubocop", "~> 1.69.2"
 end
