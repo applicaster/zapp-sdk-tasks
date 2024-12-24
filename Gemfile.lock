@@ -5,6 +5,7 @@ PATH
       aws-sdk-s3 (~> 1)
       faraday (~> 2.12.2)
       rake (~> 13.2.1)
+      rexml
       versionomy (~> 0.5.0)
 
 GEM
@@ -58,6 +59,7 @@ GEM
     rainbow (3.1.1)
     rake (13.2.1)
     regexp_parser (2.9.3)
+    rexml (3.4.0)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)

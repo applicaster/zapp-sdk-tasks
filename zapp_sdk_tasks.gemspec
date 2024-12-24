@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "faraday", "~> 2.12.2"
   spec.add_dependency "rake", "~> 13.2.1"
   spec.add_dependency "versionomy", "~> 0.5.0"
+  spec.add_dependency "rexml", "~> 3.4.0"
 
   spec.add_development_dependency "bundler", "~> 2.5.23"
   spec.add_development_dependency "dotenv", "~> 3.1.7"
