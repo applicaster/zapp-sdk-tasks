@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rake", "~> 13.2.1"
   spec.add_dependency "versionomy", "~> 0.5.0"
 
-  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "bundler", "~> 2.5.23"
   spec.add_development_dependency "dotenv", "~> 3.1.7"
   spec.add_development_dependency "fantaskspec", "~> 1.2.0"
   spec.add_development_dependency "pry", "~> 0.15.0"
