@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "dotenv", "~> 3.1.7"
   spec.add_development_dependency "fantaskspec", "~> 1.2.0"
   spec.add_development_dependency "pry", "~> 0.15.0"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 13.2.1"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rspec_junit_formatter", "~> 0.6.0"
   spec.add_development_dependency "rubocop", "~> 1.69.2"
