@@ -47,7 +47,7 @@ Make sure the params are comma-separated without whitespaces
 
 | param           | description                                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`)                   |
+| platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv/lg_tv/vizio`)       |
 | version         | The requireed version for the published sdk. _Note: only semver stable/final and preview versions will publish the sdk in zapp_ |
 | repository name | The sdk repo name                                                                                                               |
 | zapp token      | Zapp API access token                                                                                                           |
@@ -65,10 +65,10 @@ Make sure the params are comma-separated without whitespaces
 
 **Params**
 
-| param    | description                                                                                                   |
-| -------- | ------------------------------------------------------------------------------------------------------------- |
-| platform | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`) |
-| version  | The requireed version for the published sdk                                                                   |
+| param    | description                                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| platform | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv/lg_tv/vizio`) |
+| version  | The requireed version for the published sdk                                                                               |
 
 #### Upload Development Project
 
