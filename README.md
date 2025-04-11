@@ -4,6 +4,7 @@ This repo provides various rake tasks to be used on any new Zapp sdk repo you
 create.
 
 ## Installation
+
 **Prerequisites**
 
 ```
@@ -44,17 +45,17 @@ Make sure the params are comma-separated without whitespaces
 
 **Params**
 
-param        | description
-----------------|-------------|
-platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`)   |
-version         | The requireed version for the published sdk. *Note: only semver stable/final and preview versions will publish the sdk in zapp* |
-repository name | The sdk repo name  |
-zapp token      | Zapp API access token  |
+| param           | description                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv/lg_tv/vizio`)       |
+| version         | The requireed version for the published sdk. _Note: only semver stable/final and preview versions will publish the sdk in zapp_ |
+| repository name | The sdk repo name                                                                                                               |
+| zapp token      | Zapp API access token                                                                                                           |
 
 #### Publish Changelog
 
 This task creates and publish changelog to Amazon s3.
-**Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` environment variable in order to use this task.
+\*\*Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` environment variable in order to use this task.
 
 Run:
 
@@ -64,15 +65,15 @@ Make sure the params are comma-separated without whitespaces
 
 **Params**
 
-param        | description
-----------------|-------------|
-platform        | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv`)   |
-version         | The requireed version for the published sdk  |
+| param    | description                                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| platform | The platform supported by the current published sdk (Currently supporting `android/ios/roku/tvos/samsung_tv/lg_tv/vizio`) |
+| version  | The requireed version for the published sdk                                                                               |
 
 #### Upload Development Project
 
 This task uploads the Development project to Amazon s3, and updates Zapp.
-**Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `ZAPP_TOKEN` environment variable in order to use this task.
+\*\*Make sure you setup `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `ZAPP_TOKEN` environment variable in order to use this task.
 
 Run:
 
@@ -80,9 +81,9 @@ Run:
 
 **Params**
 
-param        | description
-----------------|-------------|
-file path       | Path to the development project file    |
+| param     | description                          |
+| --------- | ------------------------------------ |
+| file path | Path to the development project file |
 
 ## Development
 
@@ -96,4 +97,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/applic
 
 ## Code of Conduct
 
-Everyone interacting in the ZappSdkTasks project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/applicaster/zapp_sdk_tasks/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ZappSdkTasks project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/applicaster/zapp_sdk_tasks/blob/master/CODE_OF_CONDUCT.md).

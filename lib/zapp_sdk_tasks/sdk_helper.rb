@@ -23,7 +23,7 @@ class SdkHelper
         ci_provider: "circle_ci",
         ci_project_id: request_options[:project_repo_name],
         base_sdk_version_id: base_sdk_id(request_options[:version]),
-        scm_tag: request_options[:version],
+        scm_tag: request_options[:scm_tag] || request_options[:version],
         build_branch: preview?(request_options[:version]) ? request_options[:version] : "release"
       },
       use_latest_dev: base_sdk_id(request_options[:version]).to_s.empty?,
