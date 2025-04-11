@@ -144,6 +144,43 @@ RSpec.describe "zapp_sdks:create", type: :rake do
     end
   end
 
+  context "when a custom scm_tag is provided" do
+    let(:response) { double("response", success?: true) }
+
+    before do
+      allow(GitHelper).to receive(:last_commit_message).and_return("commit message")
+    end
+
+    it "send request with the correct custom scm_tag" do
+      expect(connection).to receive(:post)
+        .with("api/v1/sdk_creation_workers", request_params)
+        .and_return(response)
+
+      Rake::Task["zapp_sdks:create"].invoke("android", "1.0", "zapp-android", nil, "android-1.0")
+    end
+
+    def request_params
+      {
+        sdk_version: {
+          version: "1.0",
+          platform: "android",
+          screen_sizes: ["universal"],
+          status: "stable",
+          official: true,
+          channel: "stable_channel",
+          ci_provider: "circle_ci",
+          ci_project_id: "zapp-android",
+          base_sdk_version_id: nil,
+          scm_tag: "android-1.0",
+          build_branch: "release"
+        },
+        use_latest_dev: true,
+        base_sdk_version_id: nil,
+        access_token: "1234"
+      }
+    end
+  end
+
   context "when request fails" do
     let(:response) { double("response", success?: false, status: 500) }
 
